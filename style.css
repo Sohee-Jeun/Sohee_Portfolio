@@ -10,8 +10,8 @@
 
   --font--large: 32px;
   --font--medium: 24px;
-  --font--small: 18px;
-  --font--micro: 10px;
+  --font--small: 16px;
+  --font--micro: 12px;
 
   --border--radius: 4px;
 
@@ -25,6 +25,10 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: var(--color--white);
+  color: var(--color--black);
+}
+a {
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -40,6 +44,7 @@ ul {
   margin: auto var(--margin--medium);
   align-items: center;
   font-size: var(--font--large);
+  font-weight: bolder;
   color: var(--color--black);
 }
 .navbar__menu {
@@ -50,7 +55,7 @@ ul {
   margin-right: var(--margin--large);
   color: var(--color--black);
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 #home {
@@ -64,12 +69,36 @@ ul {
 }
 
 .home__description {
-  margin: auto auto 0 0;
+  margin: auto;
+}
+.project {
+  display: flex;
+  margin-bottom: var(--margin--medium);
 }
 
-.sub__title {
+.project__img {
+  width: 100px;
+  height: 100px;
+  margin-right: var(--margin--medium);
+}
+.major {
   display: flex;
-  margin: auto;
+  align-items: center;
+  margin-bottom: var(--margin--small);
+}
+.major__logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 var(--margin--small);
+  border-radius: 50%;
+}
+
+.major__name {
+  margin-bottom: 0;
+  font-size: var(--font--small);
+}
+.major__period {
+  font-size: var(--font--micro);
 }
 
 .skills__list {
