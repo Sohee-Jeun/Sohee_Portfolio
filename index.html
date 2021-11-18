@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="main.js" defer></script>
     <title>Sohee Jeun</title>
   </head>
   <body>
@@ -60,58 +61,82 @@
     </section>
 
     <!-- Project -->
-    <section id="project" class="section">
-      <h1 class="sub__title">Projects</h1>
-      <a href="" class="project">
-        <img src="img/harrypotter.png" alt="harrypotter" class="project__img" />
-        <div class="project__description">
-          <h3>Very First Project</h3>
-          <span>HTML</span>
+    <section id="projects">
+      <h1 class="sub__title">Project</h1>
+      <div class="slide__container">
+        <div class="slide fade">
+          <a href="https://github.com/Sohee-Jeun/web1" class="project">
+            <img src="img/harrypotter.png" alt="veryfirstproject" />
+            <h3 class="project__title">Very First Project</h3>
+            <span class="project__description">HTML</span>
+          </a>
         </div>
-      </a>
-      <a href="" class="project">
-        <img src="img/navbar.png" alt="navbar" class="project__img" />
-        <div class="project__description">
-          <h3>Navbar</h3>
-          <span>HTML, CSS, JavaScript</span>
+        <div class="slide fade">
+          <a href="https://github.com/Sohee-Jeun/nav_bar" class="project">
+            <img src="img/navbar.png" alt="navbar project" />
+            <h3 class="project__title">Navbar Project</h3>
+            <span class="project__description">HTML, CSS, JavaScript</span>
+          </a>
         </div>
-      </a>
-      <a href="" class="project">
-        <img
-          src="img/youtubeCloneCoding.png"
-          alt=" Y outubeCloneCoding"
-          class="project__img"
-        />
-        <div class="project__description">
-          <h3>Youtube Clone Coding</h3>
-          <span>HTML, CSS, JavaScript</span>
+        <div class="slide fade">
+          <a
+            href="https://github.com/Sohee-Jeun/youtube_mobile"
+            class="project"
+          >
+            <img src="img/youtubeCloneCoding.png" alt="Youtube Clone Coding" />
+            <h3 class="project__title">Youtube Clone Coding</h3>
+            <span class="project__description">HTML, CSS, JavaScript</span>
+          </a>
         </div>
-      </a>
-      <a href="" class="project">
-        <img src="img/minigame.png" alt="minigame" class="project__img" />
-        <div class="project__description">
-          <h3>Minigame Shoppingmall</h3>
-          <span>HTML, CSS, JavaScript</span>
+        <div class="slide fade">
+          <a
+            href="https://github.com/Sohee-Jeun/shoppingmallgame"
+            class="project"
+          >
+            <img src="img/minigame.png" alt="Minigame" />
+            <h3 class="project__title">Minigame Shoppingmall</h3>
+            <span class="project__description">HTML, CSS, JavaScript</span>
+          </a>
         </div>
-      </a>
-      <a href="" class="project">
-        <img src="img/fungame.png" alt="FunGame" class="project__img" />
-        <div class="project__description">
-          <h3>FunGame</h3>
-          <span>HTML, CSS, JavaScript</span>
+        <div class="slide fade">
+          <a
+            href="https://github.com/Sohee-Jeun/shoppingmallgame"
+            class="project"
+          >
+            <img src="img/portfolio.png" alt="Poftfolio Website" />
+            <h3 class="project__title">Sohee's portfolio</h3>
+            <span class="project__description">HTML, CSS, JavaScript</span>
+          </a>
         </div>
-      </a>
-      <a href="" class="project">
-        <img
-          src="img/whatShouldIDrink.png"
-          alt="WhatShouldIDrink"
-          class="project__img"
-        />
-        <div class="project__description">
-          <h3>What Should I Drink?</h3>
-          <span>HTML, CSS, JavaScript</span>
+        <div class="slide fade">
+          <a href="https://github.com/Sohee-Jeun/carrot_game" class="project">
+            <img src="img/fungame.png" alt="Fungame" />
+            <h3 class="project__title">FunGame</h3>
+            <span class="project__description">HTML, CSS, JavaScript</span>
+          </a>
         </div>
-      </a>
+        <div class="slide fade">
+          <a
+            href="https://github.com/Sohee-Jeun/whatShouldIDrink"
+            class="project"
+          >
+            <img src="img/whatShouldIDrink.png" alt="WhatShouldIDrink" />
+            <h3 class="project__title">What Should I Drink</h3>
+            <span class="project__description">HTML, CSS, JavaScript</span>
+          </a>
+        </div>
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="dots__container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </section>
     <!-- About -->
     <section id="about" class="section">

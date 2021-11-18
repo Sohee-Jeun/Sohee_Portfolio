@@ -34,6 +34,10 @@ a {
 ul {
   list-style: none;
 }
+button {
+  border: none;
+  background-color: transparent;
+}
 
 #navbar {
   position: sticky;
@@ -63,7 +67,7 @@ ul {
   cursor: pointer;
   text-transform: capitalize;
 }
-
+/* Home */
 #home {
   display: flex;
   width: 100%;
@@ -85,6 +89,8 @@ ul {
   margin-top: var(--margin--large);
   transform: translate(0, 60%);
 }
+
+/* Skills */
 
 #skills {
   width: 100%;
@@ -125,17 +131,96 @@ ul {
   transition: all 0.8ms ease;
   cursor: pointer;
 }
+
 /* Project */
 
-.project {
-  display: flex;
-  margin-bottom: var(--margin--medium);
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.project__img {
-  width: 100px;
-  height: 100px;
-  margin-right: var(--margin--medium);
+#projects {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.slide__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 300px;
+  margin: var(--font--large) auto;
+  padding: 10px;
+  position: relative;
+  background-color: var(--color--purple);
+}
+
+.slide__container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide__container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide__container .slide img {
+  width: 100%;
+}
+.slide__container .prev,
+.slide__container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slide__container .prev:hover,
+.slide__container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color--white);
+}
+
+.slide__container .prev {
+  left: 2px;
+}
+
+.slide__container .next {
+  right: 2px;
+}
+
+.project__title {
+  text-align: center;
+}
+
+.dots__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots__container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfdfce;
+}
+
+.dots__container .dot.active {
+  border: 2px solid green;
 }
 /* About */
 
