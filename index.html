@@ -21,7 +21,7 @@
       <div class="title"><span class="navbar__title">Sohee J</span></div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item">home</li>
+          <li class="navbar__menu__item active">home</li>
           <li class="navbar__menu__item">skills</li>
           <li class="navbar__menu__item">project</li>
           <li class="navbar__menu__item">about</li>
@@ -66,14 +66,22 @@
       <div class="slide__container">
         <div class="slide fade">
           <a href="https://github.com/Sohee-Jeun/web1" class="project">
-            <img src="img/harrypotter.png" alt="veryfirstproject" />
+            <img
+              src="img/harrypotter.png"
+              alt="veryfirstproject"
+              class="project__img"
+            />
             <h3 class="project__title">Very First Project</h3>
             <span class="project__description">HTML</span>
           </a>
         </div>
         <div class="slide fade">
           <a href="https://github.com/Sohee-Jeun/nav_bar" class="project">
-            <img src="img/navbar.png" alt="navbar project" />
+            <img
+              src="img/navbar.png"
+              alt="navbar project"
+              class="project__img"
+            />
             <h3 class="project__title">Navbar Project</h3>
             <span class="project__description">HTML, CSS, JavaScript</span>
           </a>
@@ -83,7 +91,11 @@
             href="https://github.com/Sohee-Jeun/youtube_mobile"
             class="project"
           >
-            <img src="img/youtubeCloneCoding.png" alt="Youtube Clone Coding" />
+            <img
+              src="img/youtubeCloneCoding.png"
+              alt="Youtube Clone Coding"
+              class="project__img"
+            />
             <h3 class="project__title">Youtube Clone Coding</h3>
             <span class="project__description">HTML, CSS, JavaScript</span>
           </a>
@@ -93,7 +105,7 @@
             href="https://github.com/Sohee-Jeun/shoppingmallgame"
             class="project"
           >
-            <img src="img/minigame.png" alt="Minigame" />
+            <img src="img/minigame.png" alt="Minigame" class="project__img" />
             <h3 class="project__title">Minigame Shoppingmall</h3>
             <span class="project__description">HTML, CSS, JavaScript</span>
           </a>
@@ -103,14 +115,18 @@
             href="https://github.com/Sohee-Jeun/shoppingmallgame"
             class="project"
           >
-            <img src="img/portfolio.png" alt="Poftfolio Website" />
+            <img
+              src="img/portfolio.png"
+              alt="Poftfolio Website"
+              class="project__img"
+            />
             <h3 class="project__title">Sohee's portfolio</h3>
             <span class="project__description">HTML, CSS, JavaScript</span>
           </a>
         </div>
         <div class="slide fade">
           <a href="https://github.com/Sohee-Jeun/carrot_game" class="project">
-            <img src="img/fungame.png" alt="Fungame" />
+            <img src="img/fungame.png" alt="Fungame" class="project__img" />
             <h3 class="project__title">FunGame</h3>
             <span class="project__description">HTML, CSS, JavaScript</span>
           </a>
@@ -120,7 +136,11 @@
             href="https://github.com/Sohee-Jeun/whatShouldIDrink"
             class="project"
           >
-            <img src="img/whatShouldIDrink.png" alt="WhatShouldIDrink" />
+            <img
+              src="img/whatShouldIDrink.png"
+              alt="WhatShouldIDrink"
+              class="project__img"
+            />
             <h3 class="project__title">What Should I Drink</h3>
             <span class="project__description">HTML, CSS, JavaScript</span>
           </a>
@@ -192,6 +212,30 @@
     <!-- Contact -->
     <section id="contact" class="section">
       <h1 class="sub__title">Contact</h1>
+      <div class="mailbox">
+        <div class="contact__info">
+          <label for="">Name: </label>
+          <input type="text" name="contact__name" id="contact__name" />
+          <label for="">E-Mail: </label>
+          <input type="email" name="email" id="contact__email" />
+        </div>
+        <textarea
+          name="message"
+          id="contact__message"
+          cols="55"
+          rows="10"
+        ></textarea>
+        <div class="contact__button">
+          <button class="send">SEND</button>
+        </div>
+      </div>
+
+      <div class="contact__list">
+        <a href="https://github.com/Sohee-Jeun" class="contact__icon"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="" class="contact__icon"><i class="fab fa-linkedin"></i></a>
+      </div>
     </section>
   </body>
 </html>
